@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 50%;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: left;
+    background-color: #838282;
+}
+#container {
+    width: 770px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 0;
+    
+}
+#header{
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #255539;
+    font-size: 2rem;
+}
+#weekdays {
+    width: 100%;
+    display: flex;
+    color: #255539;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  #weekdays div {
+    width: 100%;
+    padding: 10px;
+  }
+
+#calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.day {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+#eventContainer{
+    float: right;
+    background-color: transparent;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 90px;
+}
+#createEventButtons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#saveEvent{
+    background-color: #43855f;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(207, 207, 207);
+}
+#cancelCreateEvent{
+    background-color: #43855f;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(207, 207, 207);
+    
+}
+.lastMonthDays {
+    background-color: #838282;
+}
+input{
+    padding: 5px;
+}
+#sTime {
+    margin-top: 0;  
+}
+#eTime{
+    margin-top: 0; 
+}
+#type{
+    margin-top: 0; 
+}
+label{
+    margin-top: 20px;
+}
+select{
+    margin-top: 20px;
+    padding: 5px;
+}
+textarea{
+    margin-top: 0px;
+}
+#deleteEventContainer {
+    float: right;
+    background-color: transparent;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 90px;
+}
+form{
+    display: contents;
+}
+#deleteButton{
+    background-color: #43855f;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(207, 207, 207);
+}
+#closeButton{
+    background-color: #43855f;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(207, 207, 207);
+}

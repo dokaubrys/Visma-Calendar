@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
+        </div>
+
+        <div id="weekdays">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <div id="eventContainer">
+            <h3>New Event</h3>
+
+            <form action="" method="post">
+                <label for="">Event title</label>
+                <input id="title" name="title" type="text" required maxlength="50">
+                
+                <label for="">Star time</label>
+                <input id="sTime" name="sTime" type="time" required>
+
+                <label for="">End time</label>
+                <input id="eTime" name="eTime" type="time" required>
+                
+                <label for="">Event type</label>
+                <select id="type" name="type" required>
+                    <option value="1">Meeting</option>
+                    <option value="2">Call</option>
+                    <option value="3">Out of office</option>
+                </select>
+
+                <label for="">Description</label>
+                <textarea id="description" name="description" cols="30" rows="10"></textarea>
+                <div id="createEventButtons">
+                    <button id="saveEvent">Create event</button>
+                    <button id="cancelCreateEvent">Cancel</button>
+                </div>
+            </form>  
+    </div>
+    <div id="deleteEventContainer">
+        <h3>Event</h3>
+        <p id="eventText"></p>
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
